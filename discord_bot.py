@@ -11,6 +11,9 @@ from cockroach_db_connect import get_object_data
 f = open("token.json")
 data = json.load(f)
 
+f = open("colours.json")
+colours = json.load(f)
+
 classes = [line.rstrip('\n') for line in open('coco_classes.txt')]
 
 
@@ -22,6 +25,7 @@ class Recyclinator(discord.Client):
         objects = set()
         if (message.attachments):
             for attachment in message.attachments:
+                await message.channel.send("Searching for objects in your image.")
                 image = await attachment.read()
                 image_data = BytesIO(image)
                 image = save_image(image_data)
@@ -35,6 +39,7 @@ class Recyclinator(discord.Client):
                         object_embed = discord.Embed()
                         object_embed.title = "Object: " + info[0]
                         object_embed.description = "Type of waste: " + info[1]
+                        object_embed.colour = eval(colours[info[1]])
                         object_embed.add_field(name="Commonly made of", value=info[2], inline=True)
                         object_embed.add_field(name="What to do with this type of waste?", value=info[3], inline=True)
                         # await message.channel.send("Object detected: " + info[0] + "\nType of waste: " + info[1])

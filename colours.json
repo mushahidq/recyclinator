@@ -1,0 +1,7 @@
+{
+    "metal waste": "discord.Colour.blue()",
+    "electronic waste": "discord.Colour.red()",
+    "organic waste": "discord.Colour.green()",
+    "solid waste": "discord.Colour.magenta()",
+    "reusable waste": "discord.Colour.random()"
+}
