@@ -29,10 +29,8 @@ def detect_objects(image):
     img = Image.open(image)
     img_data = preprocess(img)
 
-    classes = [line.rstrip('\n') for line in open('coco_classes.txt')]
-
     ort_session = onnxruntime.InferenceSession("model.onnx")
     ort_inputs = {ort_session.get_inputs()[0].name: img_data}
     ort_outs = ort_session.run(None, ort_inputs)
 
-    print(ort_outs['labels'])
+    return ort_outs[1]
