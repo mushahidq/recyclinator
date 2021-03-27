@@ -32,12 +32,18 @@ class Recyclinator(discord.Client):
                 for object in objects:
                     info = get_object_data(object)
                     if info:
-                        await message.channel.send("Object detected: " + info[0] + "\nType of waste: " + info[1])
-                        await message.channel.send("Commonly made up of: ")
-                        i = 0
-                        for component in info[2]:
-                            await message.channel.send("#" + str(i) + ": " + component)
-                        await message.channel.send("What to do with this type of waste: " + info[3])
+                        object_embed = discord.Embed()
+                        object_embed.title = "Object: " + info[0]
+                        object_embed.description = "Type of waste: " + info[1]
+                        object_embed.add_field(name="Commonly made of", value=info[2], inline=True)
+                        object_embed.add_field(name="What to do with this type of waste?", value=info[3], inline=True)
+                        # await message.channel.send("Object detected: " + info[0] + "\nType of waste: " + info[1])
+                        # await message.channel.send("Commonly made up of: ")
+                        # i = 0
+                        # for component in info[2]:
+                        #     await message.channel.send("#" + str(i) + ": " + component)
+                        # await message.channel.send("What to do with this type of waste: " + info[3])
+                        await message.channel.send(content=None, embed=object_embed)
 
 def save_image(image_data):
     _, filename = tempfile.mkstemp(suffix=".jpg")
