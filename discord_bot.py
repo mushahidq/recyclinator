@@ -14,6 +14,9 @@ data = json.load(f)
 f = open("colours.json")
 colours = json.load(f)
 
+f = open("icons.json")
+icons = json.load(f)
+
 classes = [line.rstrip('\n') for line in open('coco_classes.txt')]
 
 
@@ -42,6 +45,10 @@ class Recyclinator(discord.Client):
                         object_embed.colour = eval(colours[info[1]])
                         object_embed.add_field(name="Commonly made of", value=info[2], inline=True)
                         object_embed.add_field(name="What to do with this type of waste?", value=info[3], inline=True)
+                        if icons[info[0]]:
+                            object_embed.set_thumbnail(url=icons[info[0]])
+                            object_embed.thumbnail.width = 64
+                            object_embed.thumbnail.height = 64
                         # await message.channel.send("Object detected: " + info[0] + "\nType of waste: " + info[1])
                         # await message.channel.send("Commonly made up of: ")
                         # i = 0

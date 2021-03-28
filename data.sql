@@ -106,31 +106,31 @@ INSERT INTO objects (object_name, waste_type, common_components, recycle) VALUES
 
 INSERT INTO objects (object_name, waste_type, common_components, recycle) VALUES ('toilet', 'solid waste', ARRAY['ceramic', 'plastic','metal'], 'recycle');
 
-INSERT INTO objects (object_name, waste_type, common_components, recycle) VALUES ('tv', 'solid waste', ARRAY['plastic','metal'], 'donate or recycle');
+INSERT INTO objects (object_name, waste_type, common_components, recycle) VALUES ('tv', 'electronic waste', ARRAY['plastic','metal'], 'donate or recycle');
 
-INSERT INTO objects (object_name, waste_type, common_components, recycle) VALUES ('laptop', 'solid waste', ARRAY['plastic','metal'], 'donate or recycle');
+INSERT INTO objects (object_name, waste_type, common_components, recycle) VALUES ('laptop', 'electronic waste', ARRAY['plastic','metal'], 'donate or recycle');
 
-INSERT INTO objects (object_name, waste_type, common_components, recycle) VALUES ('mouse', 'solid waste', ARRAY['plastic','metal'], 'donate or recycle');
+INSERT INTO objects (object_name, waste_type, common_components, recycle) VALUES ('mouse', 'electronic waste', ARRAY['plastic','metal'], 'donate or recycle');
 
-INSERT INTO objects (object_name, waste_type, common_components, recycle) VALUES ('remote', 'solid waste', ARRAY['plastic','metal'], 'donate or recycle');
+INSERT INTO objects (object_name, waste_type, common_components, recycle) VALUES ('remote', 'electronic waste', ARRAY['plastic','metal'], 'donate or recycle');
 
-INSERT INTO objects (object_name, waste_type, common_components, recycle) VALUES ('keyboard', 'solid waste', ARRAY['plastic','metal'], 'donate or recycle');
+INSERT INTO objects (object_name, waste_type, common_components, recycle) VALUES ('keyboard', 'electronic waste', ARRAY['plastic','metal'], 'donate or recycle');
 
-INSERT INTO objects (object_name, waste_type, common_components, recycle) VALUES ('cell phone', 'solid waste', ARRAY['plastic','metal'], 'donate or recycle');
+INSERT INTO objects (object_name, waste_type, common_components, recycle) VALUES ('cell phone', 'electronic waste', ARRAY['plastic','metal'], 'donate or recycle');
 
-INSERT INTO objects (object_name, waste_type, common_components, recycle) VALUES ('microwave', 'solid waste', ARRAY['plastic','metal'], 'donate or recycle');
+INSERT INTO objects (object_name, waste_type, common_components, recycle) VALUES ('microwave', 'electronic waste', ARRAY['plastic','metal'], 'donate or recycle');
 
-INSERT INTO objects (object_name, waste_type, common_components, recycle) VALUES ('oven', 'solid waste', ARRAY['plastic','metal'], 'donate or recycle');
+INSERT INTO objects (object_name, waste_type, common_components, recycle) VALUES ('oven', 'electronic waste', ARRAY['plastic','metal'], 'donate or recycle');
 
-INSERT INTO objects (object_name, waste_type, common_components, recycle) VALUES ('toaster', 'solid waste', ARRAY['plastic','metal'], 'donate or recycle');
+INSERT INTO objects (object_name, waste_type, common_components, recycle) VALUES ('toaster', 'electronic waste', ARRAY['plastic','metal'], 'donate or recycle');
 
 INSERT INTO objects (object_name, waste_type, common_components, recycle) VALUES ('sink', 'solid waste', ARRAY['ceramic', 'plastic','metal'], 'donate or recycle');
 
-INSERT INTO objects (object_name, waste_type, common_components, recycle) VALUES ('refrigerator', 'solid waste', ARRAY['wood', 'plastic','metal'], 'donate or recycle');
+INSERT INTO objects (object_name, waste_type, common_components, recycle) VALUES ('refrigerator', 'electronic waste', ARRAY['wood', 'plastic','metal'], 'donate or recycle');
 
 INSERT INTO objects (object_name, waste_type, common_components, recycle) VALUES ('book', 'solid waste', ARRAY['paper', 'plastic'], 'donate or recycle');
 
-INSERT INTO objects (object_name, waste_type, common_components, recycle) VALUES ('clock', 'solid waste', ARRAY['glass','wood', 'plastic','metal'], 'donate or recycle');
+INSERT INTO objects (object_name, waste_type, common_components, recycle) VALUES ('clock', 'electronic waste', ARRAY['glass','wood', 'plastic','metal'], 'donate or recycle');
 
 INSERT INTO objects (object_name, waste_type, common_components, recycle) VALUES ('vase', 'solid waste', ARRAY['ceramic','wood', 'plastic','metal'], 'donate or recycle');
 
@@ -138,7 +138,7 @@ INSERT INTO objects (object_name, waste_type, common_components, recycle) VALUES
 
 INSERT INTO objects (object_name, waste_type, common_components, recycle) VALUES ('teddy bear', 'solid waste', ARRAY['fibre','plastic','metal'], 'donate or recycle');
 
-INSERT INTO objects (object_name, waste_type, common_components, recycle) VALUES ('hair dryer', 'solid waste', ARRAY['plastic','metal'], 'donate or recycle');
+INSERT INTO objects (object_name, waste_type, common_components, recycle) VALUES ('hair dryer', 'electronic waste', ARRAY['plastic','metal'], 'donate or recycle');
 
 INSERT INTO objects (object_name, waste_type, common_components, recycle) VALUES ('toothbrush', 'solid waste', ARRAY['wood', 'plastic','metal'], 'donate or recycle');
 
