@@ -20,7 +20,7 @@ I used cockroachdb to store all the information about the objects and the bot re
 
 I wanted to use tensorflow and train the model on a much larger dataset but Tensorflow kept crashing on my laptop and running out of memory and training on cloud services like google colab would be quicker but it still estimated that it would take a lot of time(hours)
 So I decided to go with a pre trained model on pytorch that could be run on onnx runtime
- 
+
 ## Accomplishments that we're proud of
 
 This bot has been deployed to Linode which means that anyone can add it to their server and I really hope that this will help someone
